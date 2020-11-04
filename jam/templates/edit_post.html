@@ -15,9 +15,11 @@
 
 <body>
     <header class="header">
+        <div class="navbar">
         <a href="/blog">Blog</a>
         <a href="/gig_wall">Gig Wall</a>
         <a href="/logout">Logout</a>
+        </div>
     </header>
     <main>
         <img id="dj" src="{% static '/images/dj.png' %}" alt="Dj logo" width="75px" height="75px">
@@ -32,7 +34,7 @@
                 <input type="submit" class="btn btn-success" value="Edit">
             </form>
         </div>
-        <a href="/delete_post/{{wall_message.id}}" class="btn btn-danger delete-button">Delete Post</a>
+        <a href="/delete_post/{{wall_message.id}}" class="btn btn-danger delete-button" id="delete-button">Delete Post</a>
     </main>
     <footer class="footer">
         <p>Copywright @2020 | All rights reserved | Powered by Django 2.2</p>
